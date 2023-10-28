@@ -1,0 +1,105 @@
+:root {
+  --primaryColor: #f2faea;
+  --textColor: #496b27;
+  --blackTextColor: #0d0c0ce4;
+  --bg-button: #2e4713;
+  --whiteColor: #e6e0e0;
+}
+
+.footerSection {
+  background: var(--primaryColor);
+  width: 100%;
+}
+
+.footerCard {
+  width: 70%;
+  margin: auto;
+  padding: 4rem 0;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footerIntro {
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.footerHeading h1 {
+  color: #32491a;
+}
+
+.footerHeading span {
+  font-weight: 100;
+}
+
+.footerPeragraph p {
+  color: var(--blackTextColor);
+  font-size: 0.9rem;
+}
+
+.footerSocials {
+  margin-top: 1.5rem;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.footerLinks {
+  flex-basis: 60%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: start;
+}
+
+.linkGroup {
+  color: #32491a;
+  /* flex-direction: column; */
+  align-items: start;
+}
+
+.linkGroupList .groupTitle {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.footerList a {
+  color: var(--textColor);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footerList:hover {
+  transform: translateX(4px);
+}
+
+@media screen and (max-width:1024px) {
+  .footerCard {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .footerSection {
+    margin-top: 40px;
+  }
+
+  .footerCard {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footerSocials {
+    margin-top: 0.5rem;
+  }
+
+  
+}
+
+@media screen and (max-width:425px) {
+  .footerLinks {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}

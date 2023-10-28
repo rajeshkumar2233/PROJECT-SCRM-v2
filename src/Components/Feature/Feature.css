@@ -1,0 +1,60 @@
+:root {
+  --primaryColor: #f2faea;
+  --textColor: #496b27;
+  --blackTextColor: #0d0c0ce4;
+  --bg-button: #2e4713;
+  --whiteColor: #e6e0e0;
+}
+
+.featureSection {
+  margin-top: 2rem;
+}
+
+.featuredinSection {
+  text-align: center;
+}
+
+.featureHeading {
+  font-size: 1.3rem;
+}
+
+.companySection {
+  width: 80%;
+  margin: auto;
+}
+
+.companyLogo {
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+}
+
+.listItems {
+  width: 50%;
+}
+
+.listItems img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  mix-blend-mode: darken;
+  color: var(--textColor);
+}
+
+.godaddyLogo {
+  aspect-ratio: 4/1 !important;
+}
+
+@media screen and (max-width: 769px) {
+  .companyLogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .companySection {
+    width: 90%;
+  }
+
+  .featureHeading {
+    font-size: 1rem;
+  }
+}
